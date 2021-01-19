@@ -1,0 +1,1 @@
+labelimg ./yolo_data ./yolo_labels/predefined_classes.txt
