@@ -53,10 +53,11 @@ if __name__ == "__main__":
     while True:
         # 计时开始
         time_start=time.time()
-        pos = GetXY()
+        # pos = GetXY()
+        pos = (0, 40)
         # The simplest use, save a screen shot of the 1st monitor
         with mss.mss() as sct:
-            grab_mon_index = 1
+            grab_mon_index = 0
             mon = sct.monitors[grab_mon_index]
             monitor = {
                 "top": mon["top"] + pos[1],
